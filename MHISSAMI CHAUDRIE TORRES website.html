@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My SHS Journey ✨</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #5a4e7c;
+
+  background: linear-gradient(
+    -45deg,
+    #ffd6e8,
+    #e7c6ff,
+    #c8e7ff,
+    #fff1cc,
+    #d0f4ff,
+    #fbc4ff
+  );
+  background-size: 500% 500%;
+  animation: gradientFlow 18s ease infinite;
+}
+
+/* Animated Gradient */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 100%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 0%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Soft Glow Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.35) 0%, transparent 60%);
+  animation: floatingGlow 10s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes floatingGlow {
+  0% { transform: translate(-25%, -25%); }
+  50% { transform: translate(0%, 0%); }
+  100% { transform: translate(-25%, -25%); }
+}
+
+/* NAV */
+nav {
+  background: rgba(255,255,255,0.75);
+  padding: 18px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 6px 25px rgba(255, 182, 193, 0.4);
+  z-index: 1000;
+}
+
+nav a {
+  text-decoration: none;
+  color: #7b5ea7;
+  margin: 0 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff66c4;
+  text-shadow: 0 0 10px #ffc6ff;
+}
+
+/* CENTER HOME SECTION */
+#home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 10%;
+}
+
+/* HERO IMAGE */
+.hero-image img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 0 0 40px 40px;
+  box-shadow: 0 15px 40px rgba(255, 182, 193, 0.4);
+}
+
+/* TITLE */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  color: #7b5ea7;
+  animation: titleGlow 3s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+  0% { text-shadow: 0 0 10px #ffc6ff; }
+  50% { text-shadow: 0 0 20px #ffb3e6, 0 0 30px #ffd6ff; }
+  100% { text-shadow: 0 0 10px #ffc6ff; }
+}
+
+.name-glow {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+  color: #ff66c4;
+  margin-bottom: 20px;
+  animation: titleGlow 3s ease-in-out infinite;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: #7b5ea7;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 10%;
+}
+
+.card {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(20px);
+  width: 300px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(200, 162, 255, 0.3);
+  transition: 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 20px 50px rgba(255, 182, 193, 0.6);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-family: 'Playfair Display', serif;
+  color: #7b5ea7;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop controls>
+  <source src="https://s33.aconvert.com/convert/p3r68-cdx67/kkudg-ni6vu.mp3" type="audio/mpeg">
+</audio>
+
+<nav>
+  <a href="#home">HOME</a>
+  <a href="#grade11">GRADE 11</a>
+  <a href="#grade12">GRADE 12</a>
+</nav>
+
+<section id="home">
+  <div class="hero-image">
+    <img src="https://imgur.com/cSpVDNI.jpg">
+  </div>
+
+  <div class="welcome-box">
+    <h1>MY SHS JOURNEY ✨</h1>
+    <div class="name-glow">MHISSAMI CHAUDRIE M. TORRES</div>
+    <p>
+      Senior High School was not just about academics — it was about growth,
+      friendships, challenges, realizations, and becoming the person I am today.
+      Every event shaped me, every struggle strengthened me,
+      and every memory became part of my story.
+    </p>
+  </div>
+</section>
+
+<!-- GRADE 11 -->
+<section id="grade11">
+<h2>Grade 11 — The Beginning</h2>
+<div class="cards">
+
+<!-- (All 8 Grade 11 cards exactly as you sent — inserted here) -->
+
+<!-- I kept everything EXACT — nothing removed -->
+
+<!-- GRADE 11 CARDS START -->
+<div class="card"><img src="https://imgur.com/PnA6ShY.jpg"><div class="card-content"><h3>Nutrition Month</h3><p>Nutrition Month reminded me that taking care of my health is just as important as achieving my goals. Beyond the activities and fun performances, I realized that wellness is the foundation of everything we want to accomplish. It was a simple celebration, yet it strengthened our bond as a class and created memories I will always treasure.</p></div></div>
+
+<div class="card"><img src="https://imgur.com/Jlo3YBf.jpg"><div class="card-content"><h3>Buwan ng Wika</h3><p>Celebrating Buwan ng Wika filled me with pride in my identity as a Filipino. Wearing traditional attire and engaging in cultural activities deepened my appreciation for our heritage and traditions. It reminded me that embracing our roots gives us confidence and strength as we move forward.</p></div></div>
+
+<div class="card"><img src="https://imgur.com/YomAH0L.jpg"><div class="card-content"><h3>Teacher's Day</h3><p>Teacher’s Day became a sincere expression of gratitude. I realized how much patience, dedication, and sacrifice our teachers invest just to guide us toward a better future. Their lessons shaped not only my academic growth but also my values and character as a person.</p></div></div>
+
+<div class="card"><img src="https://imgur.com/MMAcECU.jpg"><div class="card-content"><h3>Pageant</h3><p>When our adviser joined the pageant, I felt genuinely inspired. Watching her confidence and grace on stage showed me that courage knows no age. It taught me that stepping forward with belief in yourself can quietly inspire others in powerful ways.</p></div></div>
+
+<div class="card"><img src="https://imgur.com/P2X4WET.jpg"><div class="card-content"><h3>First PE Swimming Lesson</h3><p>Our PE swimming lesson was both thrilling and challenging. Although I felt nervous at first, I slowly learned to trust myself and try. That experience reminded me that growth begins the moment we choose to face our fears and welcome new challenges.</p></div></div>
+
+<div class="card"><img src="https://imgur.com/8WV6CrO.jpg"><div class="card-content"><h3>Year-End Party</h3><p>The year-end party felt deeply emotional because it marked the end of a meaningful chapter. We celebrated, laughed, and captured memories, but I also realized how much we had grown throughout the year. It reminded me that time passes quickly, making every shared moment precious.</p></div></div>
+
+<div class="card"><img src="https://imgur.com/0WxLy1H.jpg"><div class="card-content"><h3>SHS Night</h3><p>SHS Night felt magical and unforgettable. Dressed elegantly, we celebrated not just the evening but the journey we had shared. It symbolized our growth, maturity, and the beautiful transformation we experienced together as a batch.</p></div></div>
+
+<div class="card"><img src="https://imgur.com/WIXTxL1.jpg"><div class="card-content"><h3>Field Trip</h3><p>The field trip became one of the most exciting highlights of my Grade 11 experience. Meeting the cast of Mutya ng Section E was unexpected and unforgettable. That surprise encounter reminded me that some of life’s best moments happen when we least expect them.</p></div></div>
+
+</div>
+</section>
+
+<!-- GRADE 12 -->
+<section id="grade12">
+<h2>Grade 12 — The Final Chapter</h2>
+<div class="cards">
+
+<!-- ALL 8 Grade 12 cards -->
+<div class="card"><img src="https://imgur.com/b7NXFIX.jpg"><div class="card-content"><h3>Nutrition Month</h3><p>This year’s Nutrition Month felt more meaningful because our bond as a class had grown stronger. Every shared laugh and memory carried deeper value, especially knowing that graduation was near. It reminded me to live in the present and cherish the moments I still have.</p></div></div>
+
+<div class="card"><img src="https://imgur.com/WljhaIq.jpg"><div class="card-content"><h3>Buwan ng Wika — Back-to-Back Champion</h3><p>Winning back-to-back was more than just earning a title. It reflected our teamwork, unity, and collective effort. That victory filled me with pride—not only for myself, but for everyone who worked hard to make it possible.</p></div></div>
+
+<div class="card"><img src="https://imgur.com/DhSKJpY.jpg"><div class="card-content"><h3>Acquaintance Party</h3><p>Performing my first intermission number made me nervous, yet it also made me braver. Standing before everyone pushed me beyond my comfort zone. Through that experience, I learned that confidence grows when we dare to take risks.</p></div></div>
+
+<div class="card"><img src="https://imgur.com/AkGdimy.jpg"><div class="card-content"><h3>Teacher's Day</h3><p>This Teacher’s Day felt more emotional as we approached the end of our senior high journey. It was a heartfelt thank-you to the mentors who guided, corrected, and believed in us until the very last step.</p></div></div>
+
+<div class="card"><img src="https://imgur.com/0ov096L.jpg"><div class="card-content"><h3>Bulprisa</h3><p>Bulprisa was filled with excitement, pride, and high energy as we cheered for the ADP players. I cheered especially loud for someone I truly admire, which made the experience even more meaningful to me. That day reminded me how powerful encouragement and support can be.</p></div></div>
+
+<div class="card"><img src="https://imgur.com/xcfEeCB.jpg"><div class="card-content"><h3>Retreat</h3><p>The retreat became one of the most emotional moments of my senior high experience. I shed tears and gained realizations about my life, my decisions, and the people around me. It brought clarity, healing, and a deeper understanding of who I am.</p></div></div>
+
+<div class="card"><img src="https://imgur.com/gYq40zf.jpg"><div class="card-content"><h3>Year-End Party</h3><p>Our final year-end party was beautifully bittersweet. We laughed and celebrated wholeheartedly, yet we knew our time together was slowly coming to an end. It reminded me to treasure friendships and shared memories while they are still within reach.</p></div></div>
+
+<div class="card"><img src="https://imgur.com/q3qmwNM.jpg"><div class="card-content"><h3>Capstone — Successfully Defended</h3><p>Capstone was one of the most demanding challenges I encountered in senior high school. There were sleepless nights, intense pressure, and moments of self-doubt. Yet through perseverance and determination, I overcame it. Successfully defending our project proved that I am far stronger and more capable than I sometimes give myself credit for.</p></div></div>
+
+</div>
+</section>
+
+</body>
+</html>
